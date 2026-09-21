@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaakky Aesthetic Banner</title>
+    <!-- Tailwind CSS CDN for smooth layout and positioning -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* =========================================================
+           CONFIGURACIÓN DEL FONDO TRASERO / BACKGROUND CONFIG
+           Puedes cambiar la URL de la imagen de fondo aquí abajo:
+           ========================================================= */
+        :root {
+            --bg-image: url('');
+            --bg-color: #0f1410; /* Color de respaldo si la imagen falla */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+            background-image: var(--bg-image);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            transition: background-image 0.4s ease-in-out;
+        }
+
+        /* Capa de tinte oscuro sobre el fondo para legibilidad */
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(2px);
+            z-index: 1;
+        }
+
+        /* Capa principal contenedora */
+        .main-container {
+            position: relative;
+            z-index: 10;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilos del recuadro / tarjeta aesthetic */
+        .window-header {
+            border: 1px solid rgba(160, 160, 160, 0.4);
+            border-bottom: 0px;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
+            background: rgba(45, 45, 48, 0.95);
+            color: #ffffff;
+            width: 400px;
+            max-width: 95vw;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .window-body {
+            border: 1px solid rgba(160, 160, 160, 0.4);
+            border-top: 0px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            background: rgba(25, 25, 28, 0.85);
+            backdrop-filter: blur(8px);
+            padding: 4px;
+            width: 400px;
+            max-width: 95vw;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .avatar-img {
+            border: 0px solid;
+            padding: 6px;
+            background: rgba(55, 55, 60, 0.8);
+            width: 95px;
+            height: 95px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Capa traslúcida sobre la imagen de fondo -->
+    <div class="bg-overlay"></div>
+
+    <div class="main-container">
+        <!-- Header del Recuadro -->
+        <div class="window-header">
+            <table width="100%" style="border-spacing:0;">
+                <tbody>
+                    <tr>
+                        <td style="border:0px; padding: 4px 8px;">
+                            <div style="font-family:arial;font-size:8pt;float:left; font-weight:bold; color:#e0e0e0;">An independent girl</div>
+                            <div style="font-family:arial;font-size:8pt;float:right; opacity:0.8;">— □ X</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Cuerpo del Recuadro -->
+        <div class="window-body">
+            <table width="100%" height="300">
+                <tbody>
+                    <tr>
+                        <td style="border:0px;vertical-align:top;">
+                            <div>
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <!-- Columna Izquierda: Perfil y Links -->
+                                            <td style="border:1px;border-style:solid;border-top:0px;border-bottom:0px;border-left:0px;padding:8px;vertical-align:top;border-color: rgba(160,160,160,0.4); width:130px;">
+                                                <div></div>
+                                                <div style="text-align:center;">
+                                                    <img name="qt" src="https://xatimg.com/image/qaDfGY0aS3Ez.png?q=80&w=300&auto=format&fit=crop" class="avatar-img" alt="Avatar" onerror="this.src='https://placehold.co/95x95/3a3a3d/ffffff?text=Mandy'">
+                                                </div>
+                                                <div style="font-size:4pt">&nbsp;</div>
+                                                <div style="text-align:center;font-family:arial;font-size:8pt;font-style:italic; color:#cccccc;">Lana / Scorpio / She/her</div>
+                                                <div style="text-align:center;font-family:arial;font-size:5pt;">&nbsp;</div>
+                                                <div style="text-align:center;font-family:arial;font-size:8pt;">
+                                                    <table align="center" style="width:100%;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="border:0px;background: rgba(55,55,60,0.8);padding:3px; border-radius:3px; text-align:center;" width="100">
+                                                                    <a href="http://xat.me/westcoastt" target="_blank" style="font-family:arial;font-size:8pt; text-decoration:none; color:#ffffff;">💞 Profile</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="height:3px;"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border:0px;background: rgba(55,55,60,0.8);padding:3px; border-radius:3px; text-align:center;" width="100">
+                                                                    <a href="#song" style="font-family:arial;font-size:8pt; color:#dddddd; text-decoration:none;">yeah, i am the best.</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+
+                                            <!-- Columna Derecha: Mensajes y Contenido -->
+                                            <td style="border:0px;text-align:center;vertical-align:top; padding: 6px;" width="250" height="280">
+                                                <div>
+                                                    <table style="border-collapse:collapse; margin-bottom: 6px;" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="border:0px;background: rgba(160,160,160,0.6);" width="2"><br></td>
+                                                                <td style="border:0px;background: rgba(55,55,60,0.8); padding: 2px 8px;" width="210">
+                                                                    <div style="font-family:arial;font-size:8pt;font-style:italic;letter-spacing:1px; color:#e0e0e0;">I love kittens.</div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <table style="border-collapse:collapse;" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="border:0px;background: rgba(40,40,45,0.5); border-radius:4px; padding:8px;" width="220" height="230">
+                                                                    <table style="border-collapse:collapse" align="center" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="border:0px;vertical-align:top">
+                                                                                    <div>
+                                                                                        <table style="border-collapse:collapse; margin-bottom: 4px;" align="center">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="border:0px;background: rgba(160,160,160,0.6);" width="2"><br></td>
+                                                                                                    <td style="text-align:center;border:0px;background: rgba(55,55,60,0.6); padding:2px;" width="190">
+                                                                                                        <div style="font-family:arial;font-size:8pt; color:#dddddd;">stuff here</div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                    
+                                                                                    <div>
+                                                                                        <table style="border-collapse:collapse;" align="center">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td style="border:0px;background: rgba(160,160,160,0.6);" width="2"><br></td>
+                                                                                                    <td style="text-align:center;border:0px;background: rgba(55,55,60,0.6); padding:2px;" width="190">
+                                                                                                        <div style="font-family:arial;font-size:8pt; color:#dddddd;">here too</div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+
+                                                                                    <div style="text-align:center;font-size:8pt; margin-top:12px; line-height:1.3; color:#e0e0e0;">
+                                                                                        I spend most of my time at home.
+I’m conceited and quick-tempered, but you’ll always find a tender side to my heart.
+Just kidding!
+I love horror movies, as well as listening to music or playing video games every now and then <3.<br> 
+                                                                                        .<br> 
+                                                                                        <span style="color:#ffffff; font-weight:bold;">x.</span><br> 
+                                                                                        Stfu and leave.
+                                                                                    </div>
+
+                                                                                    <div style="text-align:center;font-size:8pt; margin-top:12px; border-top:1px dashed rgba(160,160,160,0.4); padding-top:8px; color:#cccccc;">
+                                                        <strong>Me :</strong> I love getting manicures and straightening my hair..
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+</body>
+</html>
