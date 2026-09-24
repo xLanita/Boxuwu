@@ -56,7 +56,20 @@
             flex-direction: column;
             align-items: center;
         }
-
+        .playbtn{
+            position:absolute;
+            bottom:15px;
+            right:15px;
+            width:55px;
+            height:55px;
+            border:none;
+            border-radius:50%;
+            background:#A9A9AB;
+            color:white;
+            font-size:22px;
+            cursor:pointer;
+            box-shadow:0 4px 12px rgba(255,182,193,0.6);
+        }
         /* Estilos del recuadro / tarjeta aesthetic */
         .window-header {
             border: 1px solid rgba(160, 160, 160, 0.4);
@@ -220,6 +233,13 @@ I love horror movies, as well as listening to music or playing video games every
                                     </table>
                                 </td>
                             </tr>
+                                                            <audio id="music">
+<source src="https://files.catbox.moe/m367yq.mp4" type="audio/mp4">
+</audio>
+
+<button class="playbtn" onclick="toggleMusic()">▶</button>
+
+</div>
                         </tbody>
                     </table>
                 </div>
@@ -228,6 +248,22 @@ I love horror movies, as well as listening to music or playing video games every
     </tbody>
 </table>
 </div>
+                            <script>
+
+function toggleMusic(){
+let music=document.getElementById("music");
+let btn=document.querySelector(".playbtn");
+
+if(music.paused){
+music.play();
+btn.innerHTML="❚❚";
+}else{
+music.pause();
+btn.innerHTML="▶";
+}
+}
+
+</script>
 
 </body>
 </html>
